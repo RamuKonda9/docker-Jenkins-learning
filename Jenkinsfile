@@ -7,7 +7,7 @@ pipeline {
         skipDefaultCheckout true // prevent unwanted checkouts
     }
     tools {
-     //   maven 'Maven3'
+        maven 'Maven3'
         jdk 'JDK17'
     }
 
