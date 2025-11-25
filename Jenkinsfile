@@ -4,7 +4,7 @@ pipeline {
         githubPush()
     }
     options {
-        skipDefaultCheckout true
+        skipDefaultCheckout true // prevent unwanted checkouts
     }
     tools {
         maven 'Maven3'
