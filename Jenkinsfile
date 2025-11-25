@@ -13,13 +13,18 @@ pipeline {
 
     stages {
         stage('Checkout Code') {
-            when {
-                branch 'main'
-            }
             steps {
-                git url: 'https://github.com/gangasaiusk/docker-Jenkins-learning.git', branch: 'main'
+                checkout scm
             }
         }
+//         stage('Checkout Code') {
+//             when {
+//                 branch 'main'
+//             }
+//             steps {
+//                 git url: 'https://github.com/gangasaiusk/docker-Jenkins-learning.git', branch: 'main'
+//             }
+//         }
         stage('Build App') {
             steps {
                 sh 'mvn clean package -DskipTests'
