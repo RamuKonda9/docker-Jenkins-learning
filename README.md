@@ -1,2 +1,2 @@
 # docker-Jenkins-learning
-docker-Jenkins-cicd-learning
+docker-Jenkins-cicd-learnings
