@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        pollSCM('* * * * *') // fallback trigger, optional
+        githubPush()
     }
     options {
         skipDefaultCheckout true // prevent unwanted checkouts
